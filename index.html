@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>PGDO - OAI NET</title>
+</head>
+     
+    <aside id="menuOculto" class="menuOculto">
+            <div class="titleFull">
+                <img src="Local.png" alt="OAI" width="200px">
+            </div>
+
+        <a href="index.html">Painel</a>
+        <hr>
+        <a href="pages/producion.html">Em produção</a>
+        <hr>
+        <a href="pages/agenda.html">agenda</a>
+        <hr>
+        <a href="pages/tabDin.html">tabela dinâmica</a>
+        <hr>
+        <a href="pages/">Produções</a>
+        <hr>
+        <a href="pages/mapeamento.html">mapeamento das equipes</a>
+        <hr>
+        <a href="pages/rgo.html">rgo</a>
+        <hr>
+        <a href="pages/criterios.html">criterios</a>
+        <hr>
+        <a href="pages/areaBairro.html">cópia de area/bairros</a>
+        <hr>
+        <a href="pages/db.html">db</a>
+        <hr>
+        <a href="#">Sair</a>
+    </aside>
+
+    <div class="pageFull">
+        <div class="container">
+            <h1>PDGO</h1>
+        </div>
+    </div>
+    
+        <div class="formFull">
+            <div class="form">
+
+                
+            <form action="/action_page.php">
+                <table class="tableOne">
+                    <tbody>
+                        <tr>
+                            
+                            <td><input required type="text" id="contrato" name="contrato" placeholder="Contrato:"></td>
+                            <td><input required type="text" id="protocolo" name="protocolo" placeholder="Protocolo:"></td>
+                            <td><input required type="text" id="nome" name="nome" placeholder="Nome"></td>
+                            <td><input required type="tel" id="phone" name="phone" placeholder="Telefone"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="tableSecond">
+                    <tbody>
+                        <tr>
+                            <td><input required type="text" id="responsavelArea" name="responsavelArea" placeholder="Responsável da Área"></td>
+                            <td><input required type="text" id="area" name="area" placeholder="Área:" list="area"></td>
+                            
+                            <datalist id="area">
+                                <option value="Assis"></option>
+                                <option value="Candido Mota"> </option>
+                                <option value="Palmital"> </option>
+                              </datalist>
+
+                            <td><input required type="text" id="tipoOS" name="tipoOS" placeholder="Tipo de O.S" list="home"></td>
+
+                            <datalist id="home">
+                                <option value="Visita Técnica"> </option>
+                                <option value="Instalação Fibra"></option>
+                              </datalist>
+
+                            <td><input required type="text" id="subTipo" name="subTipo" placeholder="Sub Tipo da O.S" list="subOV"></td>
+
+                            <datalist id="subOV">
+                                <option value="Ativar Acesso Remoto"> </option>
+                                <option value="Banda Contratada"> </option>
+                                <option value="Conexão Lenta"> </option>
+                                <option value="Conexão Oscilando"> </option>
+                                <option value="Conexão Lenta Radio"> </option>
+                                <option value="Conexão Oscilando Radio"> </option>
+                                <option value="Conexão Oscilando - Rede Interna"> </option>
+                                <option value="Configurar Roteador"> </option>
+                                <option value="Correção de Sinal ONU"> </option>
+                                <option value="Instalação e Configuração de Roteador/Repetidor de Sinal"></option>
+                                <option value="Mudança de Titularidade"> </option>
+                                <option value="Mudança de Ponto Interno"> </option>
+                                <option value="Oscar Bressane"> </option>
+                                <option value="Problemas com Wi-Fi"> </option>
+                                <option value="Reativação de Conexão"> </option>
+                                <option value="Realizar Cabeamento Interno"></option>
+                                <option value="Sem Acesso"> </option>
+                                <option value="Sem Acesso Radio"> </option>
+                                <option value="Sem Acesso - Rede Interna"> </option>
+                                <option value="Sem Acesso - Mapear CTO"> </option>
+                                <option value="Suporte Preventivo"></option>
+                                <option value="Substituir Equipamento"> </option>
+                                <option value="Trocar Senha"></option>
+                                <option value="Upgrade com Troca de Equipamento"></option>
+                                <option value="Verificar Cabeamento Interno"> </option>
+                                <option value="Verificar Instalação Interna/Externa"></option>
+                              </datalist>
+                        </tr>
+                    </tbody>
+                </table>
+                   
+                <table class="tableThird">
+                    <tbody>
+                        <tr>     
+                            <td><input required type="text" id="cidade" name="cidade" placeholder="Cidade" list="local"></td>  
+
+                            <datalist id="local">
+                                <option value="Assis"></option>
+                                <option value="Candido Mota"> </option>
+                                <option value="Palmital"> </option>
+                                <option value="Echaporã"> </option>
+                                <option value="Oscar Bressane"> </option>
+                              </datalist>
+
+                            <td><input required type="text" id="tecnologia" name="tecnologia" placeholder="Tecnologia" list="option"></td>
+
+                            <datalist id="option">
+                                <option value="Fibra">Fibra</option>
+                                <option value="Rádio">Rádio</option>
+                              </datalist>
+
+                            <td><input required type="text" id="status" name="status" placeholder="Status"></td>
+                            <td><input required type="text" id="Equipe" name="Equipe" placeholder="Equipe"></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+                <table class="tableFourth">
+                    <tbody>
+                        <tr>
+                            <td><input required type="text" id="acompanhamento" name="acompanhamento" placeholder="Acompanhamento"></td>
+                            <td><input required type="text" id="statusEvento" name="Equipe" placeholder="Status do Evento"></td>
+                            <td><input required type="text" id="agendamento" name="agendamento" placeholder="Agendamento"></td>
+                            <td><input required type="text" id="prioridade" name="prioridade" placeholder="Prioridade"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="tableFifth">
+                    <tbody>
+                        <tr> 
+                            <td><input type="text" id="obs" name="observação" placeholder="Observação"></td>
+                            <td><input type="text" id="Motivo" name="motivo" placeholder="Motivo"></td>
+                            <td><input placeholder="Hora do Agendamento" class="textbox-n" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" id="time" /></td>
+                            <td><input placeholder="Data de Agendamento" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tableFriday">
+                    <tbody>
+                        <tr>
+                            <td><input required type="text" id="periodo" name="periodo" placeholder="Periodo" list="periodo"></td>
+                            <datalist id="periodo">
+                                <option value="Manhã"></option>
+                                <option value="Tarde"></option>
+                              </datalist>
+                            <td><input type="reset" value="Limpar Formulário" class="btnLimpar"></td>
+                            <td><input type="submit" value="Enviar Formulário" class="btnEnviar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
